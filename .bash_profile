@@ -43,3 +43,6 @@ export PATH="$PATH:/usr/local/heroku/bin"
 # sassc variables
 export SASS_LIBSASS_PATH=/Users/Adam/etc/sass/libsass
 export SASS_SASSC_PATH=/Users/Adam/etc/sass/sassc
+
+# sublime text as editor
+export EDITOR="subl"
