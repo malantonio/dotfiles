@@ -1,0 +1,22 @@
+[user]
+	email = adam.malantonio@gmail.com
+	name = Adam Malantonio
+
+[color]
+	ui = true
+
+[alias]
+	#lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --since=\"2 weeks ago\"
+    lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all # --since=\"4 weeks ago\"
+    weeklog = log --oneline --graph --decorate --all --since=\"1 week ago\"
+
+[core]
+  editor = subl -n -w
+  pager = less -RFX 
+	excludesfile = ~/.gitignore_global
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[push]
+	default = simple
